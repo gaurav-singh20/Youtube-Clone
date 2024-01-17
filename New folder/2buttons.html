@@ -1,0 +1,117 @@
+<style>
+  /*button {
+    background-color: rgb(207, 18, 18);
+    ....
+    border-radius: 2px;  
+    cursor: pointer;
+
+
+    --> can't write "button" else it would target all the buttons we will create using the button tag.
+  } */
+
+  .sub-button { /*use . to write the name of a class*/
+    background-color: rgb(207, 18, 18); /*range is 0 to 255*/
+    color: white;
+    border: none;
+    height: 35px;
+    width: 110px;
+    border-radius: 2px; /*corners of the button.*/
+    cursor: pointer; /*hand cursor*/
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: opacity 0.15s; /*it takes two values: what property and duration*/
+    box-shadow: 10px 10px 15px rgba(138, 43, 226,0.5);  /*horizontal vertical blur color*/
+    /*a in rgba is for opacity of the color*/
+    vertical-align: top;
+  }
+    /*all the elements having the same class "sub-button" will get the same css properties.*/
+
+  .sub-button:hover {   /*when the cursor hover over the element */
+    /* background-color: green; */
+    opacity: 0.8;    /*ranges from 0 to 1*/
+  }
+
+  .sub-button:active {    /*when we click on the element/button */
+    /* background-color: blue; */
+    opacity: 0.5;
+  }
+
+/*margin- space in css is called margin.so either give right margin(space) to subscribe, or give left margin to join to create a gap between two*/
+
+  .joinwopadding-button {
+    background-color: white;
+    border-color: rgb(55, 55, 221);
+    border-style: solid;
+    border-width: 1px;
+    color: rgb(55, 55, 221);
+    height: 35px;
+    width: 70px;
+    /*by using height and width, we are forcing the button to have a fixed size irrespective of it's content size. so instead, we better practice padding in the code.*/
+
+    /*spacing inside the button is called padding.*/
+    /* CSS box model:
+    3 layers- margin then border then padding */
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 15px;
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+    vertical-align: top;
+  }
+
+  .join-button {
+    background-color: white;
+    border-color: rgb(55, 55, 221);
+    border-style: solid; /*to make the whole border same color*/
+    border-width: 1px;
+    color: rgb(55, 55, 221);
+    /* height: 35px;
+    width: 70px; */
+    padding-left: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 18px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: bold; /*to make text bold*/
+    font-size: 15px; /*text size*/
+    transition: background-color 0.15s, color 0.15s;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    vertical-align: top;
+  }
+
+
+  .join-button:hover {
+    background-color: rgb(55, 55, 221);
+    color: white;
+  }
+  
+  .join-button:active {
+    opacity: 0.7;
+  }
+
+</style>
+
+<body>
+
+<p>browser by default aligns all the elements on the bases of texts inside them. so we need to align each of them elements manually using align tags.</p>
+
+<button class="sub-button"> <!--giving class name so that we can put the css properties on the "class" rather than on "button"-->
+  SUBSCRIBE 
+</button>
+
+
+<button class="joinwopadding-button">
+  JOIN W/O PADDING
+</button>
+
+<button class="join-button">
+  JOIN
+</button>
+
+</body>
