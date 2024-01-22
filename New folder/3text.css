@@ -1,0 +1,62 @@
+/*CSS Specificity-
+deteremining the priority of the property being set at different places.
+so the selector that targets more specificly will have more priority.
+e.g, .video-title{} selector will have more priority than p{} selector.*/
+
+
+p{ /*to not repeat font family statement in all the below styling, we are appling it on the p tag itself*/
+  font-family: Arial; /*cause site by default uses a font called "Times New Roman"*/
+  margin-bottom: 0px;
+}
+
+.video-title{ 
+  font-family: Delicious Handrawn;
+  font-weight: bold;
+  font-size: 18px;
+  width: 280px; /*to break line or to limit line legth vertically*/
+  line-height: 26px; /*for spacing between two lines of a same paragraph*/
+  margin-top: 0px; /*margin is used for spacing between two sentences or paragraphs*/
+  /*by default <p> tag comes with a margin at top and bottom e.g 14px*/
+  margin-bottom: 5px; 
+}
+
+.video-stat{
+  font-size: 14px;
+  color: rgb(96, 96, 96);
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.video-author{
+  color: rgb(96, 96, 96);
+  font-size: 14px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.video-discription{
+  font-size: 14px;
+  color: rgb(96, 96, 96);
+  width: 280px;
+  line-height: 22px;
+  margin-top: 0px;
+  margin-bottom: 80px;
+}
+
+.apple-text{
+  font-size: 14px;
+  background-color: rgb(226, 50, 50);
+  color:white;
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.span-example{
+  margin-left: 10px; /*for spacing between text, we can use margin attribute*/
+}
+
+.span-example:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}

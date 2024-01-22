@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Text Practice
+    </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet"> 
+    <!--to use new fonts we can download the fonts from "Google Fonts" and copy the <link>-->
+
+
+    <link rel="stylesheet" href="3text.css">
+  </head>
+  <body>
+    <p class="video-title">
+      Talking Tech and AI with Google CEO Sundar Pichai!
+    </p>
+    
+    <p class="video-stat">
+      3.4M views &#183; 6 months ago<!--entity code for some specific symbols*/-->
+    </p> 
+    
+    <p class="video-author">
+      Marques Brownlee &#10003;
+    </p>
+    
+    <p class="video-discription">
+      Talking tech and AI on the heels of Google I/O. Also a daily driver phone reveal from Google's CEO.
+      Shoutout to Sundar!
+    </p>
+    
+    <p class="apple-text">
+      Shop early for the best selection of holday favourite. <span class="span-example">Shop now &#62;</span> <!-- use the entity for ">" symbol as our browser can get cofuse between tag and symbol-->
+    </p>
+  </body>
+</html>
+
+
+
+
+<!-- Text Elements-
+  To work on the small parts of the text, we use the text elements such as <strong> to 
+  make text bold, <u> to underline. 
+  And <span> ,the most generic, which has no styles so we can use class in it and do styling 
+  according to our convinience.
+-->
+
+<!--
+  CSS Specificity-
+  Here, we are styling margin bottom in both selectors "p" and video-title/stat/etc
+  but the one which would be having priority will be the one which is more specific,
+  And in this case, classes (being more specific) have more priority than the p selector.
+
+  class name selector >>> element name selector
+-->
