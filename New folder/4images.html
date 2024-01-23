@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>image fit</title>
+    <style>
+      .thumbnail1{
+        width: 400px; /*auto set the height with respect to the original image dimensions*/
+        /* object-fit: fill; */
+        border-width: 2px;
+        border-style: dashed;
+        border-color: red;
+      }
+
+      .thumbnail2{
+        width: 300px;
+        height: 300px;
+        object-fit: fill; /*using it or not doesn't matters as browser by default fits the image inside the 
+        provided height and width by streching it where ever needed*/
+      }
+
+      .thumbnail3{
+        width: 300px;
+        height: 300px;
+        object-fit: cover; /*to fit the image into the given dimensions(height and width) but without streching it from anywhere*/
+      }
+
+      .thumbnail4{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        object-position: right;
+      }
+
+      .thumbnail5{
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
+        object-position: top; /*the images will shrink until any of the dimension(heigth or width) match with the given dimensions*/
+        border-width: 2px;
+        border-style: dashed;
+        border-color: red;
+      }
+
+    </style>
+  </head>
+  <body>
+    1.original:
+    <img class="thumbnail" src="thumbnails/thumbnail-1.webp"><br>
+
+    2.width: 400px;
+    <img class="thumbnail1" src="thumbnails/thumbnail-1.webp"><br>
+
+    3.width: 300px; height: 300px
+    <img class="thumbnail2" src="thumbnails/thumbnail-1.webp"><br>
+
+    4.object-fit: cover;
+    <img class="thumbnail3" src="thumbnails/thumbnail-1.webp"><br>
+
+    5.object-fit: cover, object-position:right;
+    <img class="thumbnail4" src="thumbnails/thumbnail-1.webp"><br>
+
+    6.object-fit:contain,object-position:top;
+    <img class="thumbnail5" src="thumbnails/thumbnail-1.webp"><br>
+  </body>
+</html>
+
+<!--
+  Object fit -
+  It determines what happens to the image if the given height and width does't match with the original dimensions of the image.
+-->
