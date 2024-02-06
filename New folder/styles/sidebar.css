@@ -1,0 +1,22 @@
+.sidebar {
+  /* background-color: aquamarine; */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 55px;
+  width: 75px;
+}
+
+.sidebar-link {
+  /* background-color: lightgray; */
+  height: 105px;
+  /* margin-bottom: 1px; */
+}
+
+.sidebar-link:hover {
+  background-color: rgb(216, 216, 216);
+}
+
+.sidebar-link img { /*it will target all the img element inside the sidebar-link*/
+  height: 25px;
+}

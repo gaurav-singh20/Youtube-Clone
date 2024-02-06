@@ -1,0 +1,87 @@
+.thumbnail{
+  width: 100%; /*100% of the div*/
+  /* width: 300px;
+  display: block;*/ 
+  /*don't need them bcs we used grid*/
+  /*vertical-align: top;*/ 
+}
+
+
+.video-title{
+  margin-top: 0px;
+  font-size: 14px;
+  font-weight: 500;
+  /* width: 220px; */
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+/* .video-preview{
+  display: inline-block;
+  width: 300px;
+  vertical-align: top;
+  margin-right: 15px;
+  used grid for it
+} */
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+/* .channel-picture{ */
+  /* display: inline-block;
+  width: 50px;
+  vertical-align: top;  */  /*commented bcs we  don't need these 3 lines anymore, as we used grid.*/
+
+
+  /*aligning the div cause aligning the image class won't do anything as it will basically put the profile on top in the div, but div is already at bottom*/
+  /*border-radius: 25px;*/  /*this won't work, since div is circle but image get overflowed so they eventually overflow the div to look square(actual shape)*/
+/* } */
+
+/* .video-info{
+  display: inline-block;
+  width: 200px;
+
+  commented bcs we  don't need these 3 lines anymore, as we used grid.
+} */
+
+.profile-picture{
+  /*width: 100%;*/ /*it will take the whole 100% space of 50px of the container/ div channel-picture*/
+  width: 40px;
+  border-radius: 25px;
+}
+
+.thumbnail-row{
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.video-author,
+.video-stats{
+  font-size: 12px;
+  color: rgb(96,96,96);
+}
+
+.video-author{
+  margin-bottom: 4px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+.video-time {
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 3px;
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+}

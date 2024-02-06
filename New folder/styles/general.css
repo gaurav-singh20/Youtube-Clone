@@ -1,0 +1,12 @@
+p{
+  font-family: Roboto,Arial; /*FONT STACK - in case roboto fails to load,arial will take it's place*/
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+body {
+  margin: 0;
+  padding-top: 80px;
+  height: 3000px;
+  padding-left: 80px;
+}

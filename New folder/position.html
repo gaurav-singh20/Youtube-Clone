@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Position</title>
+</head>
+<body style="height: 3000px; padding-top: 50px; padding-left: 80px;">
+
+
+  <div style="
+  background-color: rgb(13, 99, 20);
+  color: white;
+  position: fixed; /*think like this- it's floating on the page*/
+  left: 50%;
+  top: 50%;
+  ">floating fixed</div>
+
+
+
+  <div style="
+  background-color: black;
+  color: white;
+  position: fixed;
+  top: 0; /*from top of the window*/
+  left: 0;
+  right: 0;
+  height: 50px;
+  z-index: 1; /*defines where the element shows, front or back*/
+  ">header</div>
+
+
+
+  <div style="
+    background-color: rgb(30, 182, 50);
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 50px;
+    width: 75px;
+    ">
+    sidebar
+    <div style="
+      position: absolute;
+      background-color: rgb(226, 12, 12);
+      color: white;
+      z-index: 2;
+      top: 0;
+      right: 0;
+    ">
+      X
+    </div>
+  </div>
+  
+  
+  
+  <div style="
+    position: absolute;
+    background-color: crimson;
+    color: white;
+    z-index: 2;
+    top: 60px;
+    right: 10px;
+    ">
+    absolute
+  </div>
+
+
+
+  <div style="
+    background-color: lightblue;
+    height: 200px;
+    width: 200px;
+    position: static;
+  ">div1</div>
+
+
+
+  <div style="
+  background-color: lightpink;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  ">
+    div2(relative)
+    <div style="
+      position: absolute;
+      background-color: rgb(2, 2, 2);
+      color: white;
+      /* z-index: 2; */
+      bottom: 10px;
+      right: 10px;
+      ">
+      absolute
+    </div>
+  </div>
+
+</body>
+</html>
+
+<!-- 
+  fixed- position of the element with respect to the window.
+  absolute- position with respect to the page
+  relative- position relative to the element/div -->
+
+<!-- the element written upper is overtaken or overlapped(less z index) by the element created below (more z index).
+
+but this doen't apply on position:static, it will always appear at back.
+-->
