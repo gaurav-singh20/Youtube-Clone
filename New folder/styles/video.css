@@ -47,12 +47,12 @@
 
 .profile-picture{
   /*width: 100%;*/ /*it will take the whole 100% space of 50px of the container/ div channel-picture*/
-  width: 40px;
+  width: 36px;
   border-radius: 25px;
 }
 
 .thumbnail-row{
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   position: relative;
 }
 
@@ -72,6 +72,19 @@
   column-gap: 16px;
   row-gap: 40px;
 }
+
+@media (max-width: 1000px) { /*the css inside this would only activate when the screen size is 600px or less*/
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px){
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 .video-time {
   font-family: Roboto, Arial;

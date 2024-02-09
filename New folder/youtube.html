@@ -13,7 +13,7 @@
   </head>
 
   <body>
-    <div class="header">
+    <header class="header">
       <div class="left-section">
         <img class="hamburger-menu" src="icons/hamburger-menu.svg">
         <img class="youtube-logo" src="icons/youtube-logo.svg">
@@ -22,6 +22,7 @@
         <input  class="search-bar" type="text" placeholder="Search">
         <button class="search-button">
           <img class="search-icon" src="icons/search.svg">
+          <div class="tooltip">Search</div>
         </button>
         <button class="voice-search-button">
           <img class="voice-search-icon" src="icons/voice-search-icon.svg">
@@ -38,30 +39,36 @@
         </div>
         <img class="current-user-picture" src="channel-pictures/my-channel.jpg">
       </div>
-    </div>
+    </header>
     
-    <div class="sidebar">
+    <nav class="sidebar">
       <div class="sidebar-link">
         <img src="icons/home.svg">
+        <div>Home</div>
       </div>
       <div class="sidebar-link">
         <img src="icons/explore.svg">
+        <div>Exlpore</div>
       </div>
       <div class="sidebar-link">
         <img src="icons/subscriptions.svg">
+        <div>Subscriptions</div>
       </div>
       <div class="sidebar-link">
         <img src="icons/originals.svg">
+        <div>Originals</div>
       </div>
       <div class="sidebar-link">
         <img src="icons/youtube-music.svg">
+        <div>Youtube Music</div>
       </div>
       <div class="sidebar-link">
         <img src="icons/library.svg">
+        <div>Library</div>
       </div>
-    </div>
+    </nav>
 
-    <div class="video-grid">
+    <main class="video-grid">
       <div class="video-preview"> <!--div(division) is simply a contaior/box...it's, by default, a block element -->
         <div class="thumbnail-row"> <!--vertical div 1/2-->
           <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
@@ -207,7 +214,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </main>
 
 
   </body>

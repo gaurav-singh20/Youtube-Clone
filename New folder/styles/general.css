@@ -5,8 +5,10 @@ p{
 }
 
 body {
+  background-color: rgb(247, 247, 247);
   margin: 0;
   padding-top: 80px;
   height: 3000px;
-  padding-left: 80px;
+  padding-left: 100px;
+  padding-right: 24px;
 }
